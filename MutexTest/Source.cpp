@@ -1,5 +1,5 @@
 #include <windows.h>
-
+#include <stdio.h>
 #define MUTEX TEXT("KITTU_MUTEX")
 
 DWORD WINAPI ThreadFunc(HWND hWnd) {
