@@ -62,6 +62,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
 
 	if (!RegisterClass(&winc)) return 1;
 
+	//dassfdsd
 	hWnd = CreateWindow(
 		TEXT("KITTY"), TEXT("Kitty on your lap"),
 		WS_OVERLAPPEDWINDOW | WS_VISIBLE,
