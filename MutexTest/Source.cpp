@@ -50,15 +50,6 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
 	MSG msg;
 	WNDCLASS winc;
 	int a, b, c;
-	winc.style = CS_HREDRAW | CS_VREDRAW;
-	winc.lpfnWndProc = WndProc;
-	winc.cbClsExtra = winc.cbWndExtra = 0;
-	winc.hInstance = hInstance;
-	winc.hIcon = LoadIcon(NULL, IDI_APPLICATION);
-	winc.hCursor = LoadCursor(NULL, IDC_ARROW);
-	winc.hbrBackground = (HBRUSH)GetStockObject(WHITE_BRUSH);
-	winc.lpszMenuName = NULL;
-	winc.lpszClassName = TEXT("KITTY");
 
 	if (!RegisterClass(&winc)) return 1;
 
